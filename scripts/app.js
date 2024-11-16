@@ -1,5 +1,6 @@
 const navBtn = document.querySelector(".nav__btn")
 const navMenu = document.querySelector(".nav-menu")
+const icon = document.querySelectorAll(".place__like-icon");
 let navOpen = false;
 navBtn.addEventListener("click", function () {
     if (navOpen) {
@@ -12,3 +13,8 @@ navBtn.addEventListener("click", function () {
         navOpen = true
     }
 })
+    icon.forEach(element => {
+    element.addEventListener('click', () => {
+        element.classList.toggle('place__like-icon--fill');
+    });
+});
