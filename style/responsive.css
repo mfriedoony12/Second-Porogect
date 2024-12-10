@@ -1,4 +1,26 @@
+@media (max-width: 420px){
+    .place__title{
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 23rem;
+    }
+    .service{
+        max-width: 31rem;
+    }
+    .place__caption{
+        width: 25rem;
+       
+    }
+    .desination__places{
+       justify-content: center;
+    }
+}
 @media (max-width: 370px){
+    .desination__title{
+        font-size: 2.5rem;
+    }
     .header-content__title{
         font-size: 4rem;
     }
@@ -54,9 +76,14 @@
         max-width: 50rem;
       }
       .service{
-        width: 30rem;
+        width: 33rem;
         height: 28rem;
         padding: 0 1rem;
+      }
+      .newsLetter{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
       }
 }
 
@@ -70,9 +97,6 @@
     .service__img{
         width: 7rem;
         height: 7rem;
-    }
-    .services{
-        flex-wrap: nowrap;
     }
     .service__title{
         font-size: 1.6rem;
@@ -107,7 +131,7 @@
         flex-wrap: nowrap;
     }
     .service{
-        width: 33rem;
+        width: 32rem;
         height: 28rem;
         padding: 0 3rem;
       }
